@@ -1,13 +1,13 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 
@@ -32,13 +32,13 @@ body {
   padding: 20px;
 }
 
-.card {
-  text-align: center;
-  box-shadow: 2px 2px 2px gray;
+.card-img-overlay {
+  margin-top: 28vh;
 }
 
 .mini-text {
   font-size: 12px;
+  position: relative;
 }
 
 .shop {
@@ -51,15 +51,13 @@ body {
   width: 45vw;
 }
 
-.p-center {
-  color: black;
-}
-
 .mini-stories-first .card {
   float: right;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px gray;
 }
 
 .bottom-container {
@@ -68,12 +66,14 @@ body {
 
 .mini-stories-second .card {
   float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px gray;
 }
 
 .holiday img {
-  width: 50vw;
-}
-
-.holiday p {
-  color: white;
+  width: 45vw;
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
 }
