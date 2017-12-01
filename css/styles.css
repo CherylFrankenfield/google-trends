@@ -1,13 +1,13 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 
@@ -16,45 +16,36 @@
   padding: 0;
   margin: 0;
 }
-
 h2 {
   padding: 20px;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #e9ecef;
   color: #495057;
 }
-
 .container-fluid {
   padding: 20px;
   margin-top: 30px;
 }
-
 .row {
   padding: 20px;
 }
-
 .card-img-overlay {
-  margin-top: 28vh;
+  margin-top: 20vh;
 }
-
 .mini-text {
   font-size: 12px;
   position: relative;
 }
-
 .shop {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .shop img {
   width: 45vw;
 }
-
 .mini-stories-first .card {
   float: right;
   display: block;
@@ -63,11 +54,9 @@ body {
   text-align: center;
   box-shadow: 0 5px 5px -5px gray;
 }
-
 .bottom-container {
   clear: both;
 }
-
 .mini-stories-second .card {
   float: left;
   display: block;
@@ -76,18 +65,16 @@ body {
   text-align: center;
   box-shadow: 0 5px 5px -5px gray;
 }
-
 .holiday img {
   width: 45vw;
 }
-
 .holiday .card-text, .shop .card-text {
   text-shadow: 0 1px black;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1430px) {
+@media screen and (min-width: 750px) and (max-width: 1285px) {
   body {
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
   .headline {
     display: none;
@@ -100,15 +87,59 @@ body {
     height: 30vh;
     object-fit: cover;
   }
-
   .card-img-overlay {
     margin-top: 15vh;
   }
-
   .holiday img {
     width: 100vw;
     height: 30vh;
     object-fit: cover;
   }
+  /*.mini-stories-first .card {
+    width: 50rem;
+  }
+  .mini-stories-second {
+    width: 50rem;
+  }*/
+}
 
+@media screen and (min-width: 320px) and (max-width: 749px) {
+  body {
+    /*background-color: green;*/
+  }
+  .container-fluid {
+    padding: 2px;
+    margin-top: 2px;
+  }
+  .row {
+    padding: 2px;
+  }
+  .headline {
+    display: none;
+  }
+  .shop {
+    float:none;
+  }
+  .shop img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .card-img-overlay {
+    margin-top: 22vh;
+  }
+  .holiday img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+  .mini-stories-second .card {
+    float: none;
+  }
+  .mini-stories-first .card {
+    float: none;
+  }
+  .card-img {
+    float: left;
+  }
 }
