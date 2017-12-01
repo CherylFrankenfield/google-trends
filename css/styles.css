@@ -84,3 +84,31 @@ body {
 .holiday .card-text, .shop .card-text {
   text-shadow: 0 1px black;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1430px) {
+  body {
+    background-color: yellow;
+  }
+  .headline {
+    display: none;
+  }
+  .shop {
+    float:none;
+  }
+  .shop img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .card-img-overlay {
+    margin-top: 15vh;
+  }
+
+  .holiday img {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+}
